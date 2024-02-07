@@ -1,0 +1,16 @@
+1. js basics 
+2. DOM
+3. projects on DOM
+4. asynchronous programming ( promises, async/await , callback hell )
+5. OOPs , prototype
+
+ReactJS => FB
+F4 => React + Redux
+
+1. Basics of React
+2. Components & JSX
+3. Component life cycle, Hooks
+4. Small applications
+5. State Management ( Redux )
+
+
