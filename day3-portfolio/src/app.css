@@ -1,0 +1,52 @@
+/* @import "./fonts/poppins.ttf"; */
+
+@font-face {
+    font-family: Poppins;
+    src: url("./fonts/poppins.ttf");
+}
+
+* {
+    margin: 0;
+    font-family: Poppins;
+}
+.root-container {
+
+}
+.body {
+    display: grid;
+    grid-template-columns: 4fr 10fr;
+}
+.header-container {
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+}
+.header-container img {
+    width: 100px;
+}
+.leftbar-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-right: 1px solid gray;
+}
+.leftbar-container .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.leftbar-container ul {
+    padding-left: 10px;
+}
+
+.education-card {
+    padding: 10px 0;
+    position: relative;
+}
+.course {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}

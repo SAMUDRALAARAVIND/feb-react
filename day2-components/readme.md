@@ -85,3 +85,56 @@
 
     const h1 = <h1 id={"test"}>{username}</h1>;
   ```
+
+  - In `jsx` we can also bind another react element or list of elements using curly braces.
+  ```javascript
+    
+    const element = (
+        <div>
+            {<p>para text</p>}
+            {
+                [
+                    <b>Bold 1</b>,
+                    <b>Bold 2</b>,
+                    <b>Bold 3</b>
+                ]
+            }
+        </div>
+    );
+  ```
+
+  - If a function is returning `jsx` then we can use that function as a custom tag in another jsx ( but the function name should start with a capital letter )
+  ```javascript
+    function Component(props){
+        console.log(props); // { name: "aravind", age: 23 }
+        return (
+            <div>
+              <h1>{props.name}</p>
+              <h2>{props.age}</p>
+            </div>
+        );
+    }
+
+    const element = (
+        <div>
+            <Component name="aravind" age="23" />
+        </div>
+    )
+  ```
+  - A component in React represents a small chunk of UI in the whole application. So every React application will be constructed using large number of components.
+  - We can also write some expresssions with in the `{}` notation of `jsx`. using which we can acheive conditional rendering of react elements.
+
+  ```javascript 
+    function Component(){
+        const x = false;
+
+        return (
+            <div>
+                {
+                    x ? <h1>Aravind</h1> : <h2>Aravind</h2>
+                }
+            </div>
+        )
+    }
+  ```
+  - Above one is a ternary expression which always results in any one of `h1` or `h2` jsx elements depending on the `x` value.
