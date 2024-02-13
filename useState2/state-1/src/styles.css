@@ -1,0 +1,14 @@
+.container {
+   width: 50vw;
+   border: 1px solid gray;
+   padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.tasks {
+    display: flex;
+    flex-direction: column;
+}

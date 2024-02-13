@@ -1,0 +1,7 @@
+.filters {
+    display: flex;
+    gap: 20px;
+}
+.filters b {
+    cursor: pointer;
+}
