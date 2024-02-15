@@ -1,0 +1,28 @@
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 30px;
+}
+.input {
+    padding: 5px 10px;
+}
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.skill p {
+    margin: 0;
+}
+.skill .material-icons {
+    cursor: pointer;
+    transition: 0.2s ;
+    border-radius: 50%;
+}
+.skill .material-icons:hover {
+    background-color: rgb(208, 207, 207);
+}

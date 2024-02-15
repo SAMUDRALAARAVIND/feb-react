@@ -1,0 +1,46 @@
+.fr-aic {
+    display: flex;
+    align-items: center;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.movie-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.movie-card {
+    box-shadow: 2px 2px 5px #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 350px;
+}
+
+.movie-card img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 5 / 2;
+    border-radius: 4px;
+}
+.release-date {
+    background-color: #e7e7e7;
+    padding: 2px 4px;
+    border-radius: 10px;
+}
+
+.search-container {
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+.search-container input {
+    padding: 10px 14px;
+    width: 50vw;
+    border: 1px solid #e7e7e7;
+}
+.search-container input:focus {
+    outline: none;
+}
