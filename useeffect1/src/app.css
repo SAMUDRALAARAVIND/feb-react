@@ -1,0 +1,8 @@
+.report {
+    height: 500px;
+    box-shadow: 2px 2px 4px #e7e7e7;
+    border-radius: 4px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
