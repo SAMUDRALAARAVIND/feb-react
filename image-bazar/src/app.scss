@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  .search-box {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 2px 3px #e7e7e7;
+    input {
+      width: 60%;
+      padding: 10px;
+      border-radius: 30px;
+      border: 1px solid #e7e7e7;
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+  .images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .image-card {
+      position: relative;
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+      .layer {
+        display: flex;
+        opacity: 0;
+        transition: 0.8s;
+        position: absolute;
+        padding: 20px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(11, 10, 10, 0.256);
+        justify-content: center;
+        align-items: center;
+        .description {
+          font-weight: 500;
+          font-size: 1.2rem;
+          color: white;
+          text-shadow: 1px 1px 2px #000;
+        }
+        .likes {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          gap: 3px;
+        }
+      }
+    }
+    .image-card:hover {
+      .layer {
+        opacity: 1;
+      }
+    }
+  }
+}
+/* 
+Babel loader => JSX => React elements
+sass loader => .scss => .css
+*/

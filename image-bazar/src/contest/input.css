@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35vw;
+
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.input-container label {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.input-container .error {
+    color: red;
+}
+.input-container input {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.input-container input:focus{
+    outline: none;
+}
+.btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+.valid {
+    border:2px solid green;
+}
+.invalid {
+    border:2px solid red;
+}
