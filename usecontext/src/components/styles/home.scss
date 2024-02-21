@@ -1,0 +1,12 @@
+.home-screen {
+  padding: 20px;
+  border: 2px solid red;
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    .card {
+      padding: 20px;
+      border: 1px solid blue;
+    }
+  }
+}
