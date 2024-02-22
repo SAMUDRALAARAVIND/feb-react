@@ -1,0 +1,16 @@
+.booking-card {
+    padding: 20px;
+    box-shadow: 2px 2px 4px #e7e7e7;
+    border-radius: 6px;
+    width: 280px;
+    .top {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    span {
+        padding: 4px;
+        border-radius: 2px;
+        background-color: #e7e7e7;
+    }
+}
