@@ -1,0 +1,23 @@
+Movie : 
+
+{
+    title: "",
+    imageUrl: "",
+    releaseDate: "17 Aug 2020",
+    movieId: 3892,
+    description: "",
+}
+
+Song: 
+
+{
+    title: "",
+    imageUrl: "",
+    fileAddress: "", // mp3 file
+    viewsCount: "2,83,939",
+    movieId: 3892
+}
+
+{
+    movieId: [ {}, {}, {}, {},]
+}

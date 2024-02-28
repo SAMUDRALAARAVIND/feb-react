@@ -1,0 +1,12 @@
+.player-layout-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10fr 2fr;
+  .screen {
+    background-color: #121212;
+  }
+  .player {
+    background-color: blue;
+  }
+}

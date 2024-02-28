@@ -1,0 +1,47 @@
+@mixin fr-aic {
+  display: flex;
+  align-items: center;
+}
+
+.songs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  .song-card {
+    padding: 10px;
+    border-radius: 6px;
+    justify-content: space-between;
+    color: white;
+    transition: 0.4s;
+    @include fr-aic;
+    .left {
+      gap: 10px;
+      @include fr-aic;
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+      .play-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        .play-btn {
+          cursor: pointer;
+        }
+      }
+    }
+    .right {
+      @include fr-aic;
+      gap: 20px;
+      .fav-btn {
+        cursor: pointer;
+      }
+    }
+  }
+  .song-card:hover {
+    background-color: #242424;
+  }
+}
