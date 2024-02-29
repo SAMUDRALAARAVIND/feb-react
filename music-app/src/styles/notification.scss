@@ -1,0 +1,23 @@
+.notification-box {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-right: 40px;
+  .fav {
+    position: relative;
+    span {
+      font-size: 2rem !important;
+      color: red;
+    }
+    b {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background-color: blue;
+      color: white;
+      padding: 4px;
+      border-radius: 4px;
+      font-size: 0.6rem;
+    }
+  }
+}

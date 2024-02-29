@@ -5,8 +5,8 @@ import { ActionTypes } from "./actions";
 const intialState = {
     movies,
     songs,
-    likedSongs: [],
-    activeSong: null
+    likedSongs: [], // [ 100, 200, 300 ]
+    activeSong: null // { state: true, id: }
 }
 
 const reducer = (state = intialState, action) => {
