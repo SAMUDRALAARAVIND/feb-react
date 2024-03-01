@@ -1,0 +1,26 @@
+.home-screen {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 30px;
+  .create-post-form {
+    align-self: center;
+  }
+  .posts {
+    display: flex;
+    height: 100%;
+    overflow-y: scroll;
+    flex-direction: column;
+    gap: 20px;
+    .post-card {
+      padding: 10px;
+      border-radius: 6px;
+      background-color: #e7e7e7;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+}
