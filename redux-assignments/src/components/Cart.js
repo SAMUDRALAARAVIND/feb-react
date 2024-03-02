@@ -1,0 +1,1 @@
+export const Cart = () => <h2>Cart</h2>

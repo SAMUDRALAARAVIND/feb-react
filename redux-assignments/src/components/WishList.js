@@ -1,0 +1,1 @@
+export const WishList = () => <h2>WishList</h2>

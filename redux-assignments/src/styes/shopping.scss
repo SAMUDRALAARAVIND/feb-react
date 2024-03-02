@@ -1,0 +1,17 @@
+.products-list {
+  display: flex;
+  gap: 20px;
+  .product-item {
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e7e7e7;
+    img {
+      height: 50%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
