@@ -56,6 +56,12 @@ const reducer = (state = intialState, action) => {
         }
         return { ...state, cart: { ...cart, [productId]: currentCount + count } };
     }
+    if (action.type === ActionTypes.UPDATE_WISHLIST) {
+        const productId = action.payload;
+        const wishList = state.wishList;
+        wishList[productId] ? (delete wishList[productId]) : (wishList[productId] = true);
+        return { ...state, wishList: { ...wishList } }
+    }
     return state;
 }
 

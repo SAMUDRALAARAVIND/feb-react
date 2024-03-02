@@ -1,9 +1,11 @@
 import { useDispatch, useSelector } from "react-redux"
 import { ActionTypes } from "../store/ActionTypes";
 
-const Product = ({ product }) => {
+export const Product = ({ product }) => {
     const cart = useSelector(state => state.cart);
     const count = cart[product.id];
+    const wishList = useSelector(state => state.wishList);
+    const wishListed = Boolean(wishList[product.id]);
 
     const dispatch = useDispatch();
 
@@ -11,8 +13,15 @@ const Product = ({ product }) => {
         dispatch({ type: ActionTypes.UPDATE_CART, payload: { id: product.id, count } })
     }
 
+    const updateWishList = () => {
+        dispatch({ type: ActionTypes.UPDATE_WISHLIST, payload: product.id })
+    }
+
     return (
         <div className="product-item">
+            <span className="material-icons" onClick={updateWishList} style={{ color: wishListed ? "red" : "black" }}>
+                favorite
+            </span>
             <img src={product.imageUrl} alt="product" />
             <b>{product.name}</b>
             <p>{product.description}</p>
